@@ -1,0 +1,374 @@
+* {
+    box-sizing: border-box;
+
+}
+
+// @font-face {
+//     font-family: Playfair Display;
+//     src: url("./fonts/PlayfairDisplay-Regular.ttf") format("opentype");
+// }
+
+// @font-face {
+//     font-family: Lato;
+//     src: url("./fonts/Lato-Regular.ttf") format("opentype");
+// }
+
+// @font-face {
+//     font-family: Open Sans;
+//     src: url("./fonts/OpenSans-Regular.ttf") format("opentype");
+// }
+
+ul,
+li {
+    list-style: none;
+}
+
+html {
+
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background: #F5F5F5;
+}
+
+.wrap {
+    max-width: 1560px;
+    margin: 0 auto;
+}
+
+#top {
+    height: 64px;
+    width: 64px;
+    position: absolute;
+    left: 72px;
+    transform: translateY(-93px);
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    padding: 20px;
+    transition: all .3s;
+}
+
+#top:hover {
+    background: linear-gradient(to top right, #000000 0%, #ffffff 100%);
+    color: #fff;
+}
+
+#top:hover img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(1298%) hue-rotate(209deg) brightness(118%) contrast(100%);
+}
+
+.top {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 118px;
+
+    li {
+        font-family: 'Slabo 13px';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+
+        color: #000000;
+    }
+}
+
+.top-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.top-container-title {
+    font-family: 'Kodchasan';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 83px;
+
+    color: #000000;
+}
+.top-container2,.top-container3 {
+    display: flex;
+    align-items: center;
+    gap: 144px;
+}
+.top-container-text {
+    font-family: 'Slabo 13px';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+
+    color: #000000;
+    margin-top: 80px;
+}
+
+.top-container-btn-view {
+    display: flex;
+    gap: 54px;
+    margin-top: 80px;
+
+    .top-container-btn {
+        display: inline-flex;
+        font-family: 'Slabo 13px';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 39px;
+        text-align: center;
+
+        color: #000000;
+        background: #B2AE7F;
+        border-radius: 5px;
+        padding: 18px 22px;
+    }
+}
+
+.container-title {
+    font-family: 'Kodchasan';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+
+    color: #000000;
+    text-align: center;
+}
+
+.container-text {
+    font-family: 'Slabo 13px';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+
+    color: #000000;
+    text-align: center;
+    margin-top: 37px;
+    margin-bottom: 100.43px;
+
+}
+
+.container-product-catigory-price {
+    display: flex;
+    justify-content: space-around;
+
+    .container-product-catigory {
+        /* Cleanser */
+
+
+        font-family: 'Kodchasan';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 31px;
+
+        color: #000000;
+
+
+    }
+
+    .container-product-price {
+        /* $ 71.00 USD */
+
+       
+
+        font-family: 'Kodchasan';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 17px;
+
+        color: #000000;
+
+
+    }
+}
+
+.container-center-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 88px;
+    
+}
+.container-center-product{
+    flex-basis: 355px;
+}
+.container-product-text {
+    /* Anti Acne washing gel */
+
+
+    font-family: 'Slabo 13px';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: capitalize;
+
+    color: #000000;
+
+    margin-top: 8px;
+
+}
+
+.container-product-btn {
+    background: #B2AE7F;
+    border-radius: 5px;
+    font-family: 'Kodchasan';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+
+    color: #000000;
+    padding: 9px 100px;
+}
+
+.three-img {
+
+    display: flex;
+    gap: 17.67px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.img-text {
+    position: relative;
+
+    .text {
+        position: absolute;
+        position: absolute;
+        /* Important */
+        top: 50%;
+        /* Position Y halfway in */
+        left: 50%;
+        /* Position X halfway in */
+        transform: translate(-50%, -50%);
+        /* Move it halfway back(x,y) */
+        background: rgba(178, 174, 127, 0.4);
+        border-radius: 5px;
+        padding: 103px 56px;
+    }
+}
+
+.blog-title {
+    font-family: 'Kodchasan';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+
+    color: #000000;
+    text-align: center;
+    margin: 162px auto;
+}
+
+.blog-block {
+    display: flex;
+    gap: 68px;
+    border: 1px solid #000000;
+    margin-top: 28px;
+    padding: 65px;
+
+    .blog-block-title {
+        font-family: 'Slabo 13px';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 39px;
+
+        color: #000000;
+
+    }
+
+    .blog-block-btn {
+        font-family: 'Slabo 13px';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+        /* identical to box height */
+
+
+        color: #000000;
+        background: #B2AE7F;
+        border-radius: 5px;
+        padding: 15px 30px;
+        margin-top: 94px;
+    }
+}
+
+footer {
+    padding: 158px;
+    background: #B2AE7F;
+}
+
+.two-title {
+    display: flex;
+    justify-content: space-around;
+
+    .title {
+        font-family: 'Kodchasan';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 52px;
+
+        color: #000000;
+    }
+}
+
+.text-footer {
+    font-family: 'Slabo 13px';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+
+    color: #000000;
+}
+
+.text-two-menu {
+    display: flex;
+    justify-content: space-around;
+
+    .text {
+        max-width: 294px;
+        font-family: 'Slabo 13px';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+
+        color: #000000;
+
+    }
+}
+
+.footer-row {
+    display: flex;
+    gap: 276px;
+
+    ul li {
+        font-family: 'Slabo 13px';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+
+        color: #000000;
+        margin-top: 27px;
+    }
+}
