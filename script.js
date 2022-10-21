@@ -1,3 +1,69 @@
+// function to detect if an element is scrolled into view
+function isScrolledIntoView(elem)
+{
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+
+    var elemTop = $(elem).offset().top;
+    var elemBottom = elemTop + $(elem).height();
+
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
+
+// listen for scroll event
+$(window).scroll(function () {
+  // check if element is scrolled into view
+  if (isScrolledIntoView($('.blog-title,.container-title, .container-text, .blog-title,.text-footer'))) {
+    // element is scrolled into view, add animation class
+    $('.blog-title,.container-title, .container-text, .blog-title,.text-footer').addClass('animation');
+  }
+});
+
+$(window).scroll(function () {
+    // check if element is scrolled into view
+    if (isScrolledIntoView($('.text-two-menu,.three-img,.blog-block'))) {
+      // element is scrolled into view, add animation class
+      $('.text-two-menu,.three-img,.blog-block').addClass('animation2');
+    }
+  });
+  
+  $(window).scroll(function () {
+    // check if element is scrolled into view
+    if (isScrolledIntoView($('.logo'))) {
+      // element is scrolled into view, add animation class
+      $('.logo').addClass('animation3');
+    }
+  });
+  $(window).scroll(function () {
+    // check if element is scrolled into view
+    if (isScrolledIntoView($('.menu'))) {
+      // element is scrolled into view, add animation class
+      $('.menu').addClass('animation4');
+    }
+  });
+  $(window).scroll(function () {
+    // check if element is scrolled into view
+    if (isScrolledIntoView($('.top-container-right,.top-container-left'))) {
+      // element is scrolled into view, add animation class
+      $('.top-container-right,.top-container-left').addClass('animation5');
+    }
+  });
+  $(window).scroll(function () {
+    // check if element is scrolled into view
+    if (isScrolledIntoView($('.top-container3-left,.top-container2-left'))) {
+      // element is scrolled into view, add animation class
+      $('.top-container3-left,.top-container2-left').addClass('animation6');
+    }
+  });
+
+  $(window).scroll(function () {
+    // check if element is scrolled into view
+    if (isScrolledIntoView($('.top-container3-right, .top-container2-right'))) {
+      // element is scrolled into view, add animation class
+      $('.top-container3-right, .top-container2-right').addClass('animation7');
+    }
+  });
+
 // $(document).ready(function () {
 
 //     // $(".slick-next").click(function(e){
@@ -93,3 +159,4 @@ $(document).ready(function () {
 //     $(this).siblings().removeClass('active');
 //     $(this).addClass('active');
 //   });
+

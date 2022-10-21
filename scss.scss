@@ -17,77 +17,64 @@
 //     font-family: Open Sans;
 //     src: url("./fonts/OpenSans-Regular.ttf") format("opentype");
 // }
-.logo {
+  .animation3{
     animation: backInDown;
     /* referring directly to the animation's @keyframe declaration */
     animation-duration: 2s;
     /* don't forget to set a duration! */
 }
 
-.menu {
+.animation4 {
     animation: backInRight;
     /* referring directly to the animation's @keyframe declaration */
     animation-duration: 3s;
     /* don't forget to set a duration! */
 }
 
-.top-container-right {
+.animation5 {
     animation: backInRight;
     /* referring directly to the animation's @keyframe declaration */
     animation-duration: 4s;
     /* don't forget to set a duration! */
 }
 
-.top-container-left {
-    animation: backInLeft;
-    /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 4s;
-    /* don't forget to set a duration! */
-}
 
-.top-container2 {
-    .top-container2-left {
-        animation: backInLeft;
-        /* referring directly to the animation's @keyframe declaration */
-        animation-duration: 5s;
-        /* don't forget to set a duration! */
-    }
 
-    .top-container2-right {
-        animation: backInRight;
-        /* referring directly to the animation's @keyframe declaration */
-        animation-duration: 6s;
-        /* don't forget to set a duration! */
-    }
-}
 
-.top-container3-left {
+
+
+
+.animation6 {
     animation: backInLeft;
     /* referring directly to the animation's @keyframe declaration */
     animation-duration: 8s;
     /* don't forget to set a duration! */
 }
 
-.top-container3-right {
+.animation7,.top-container2-right {
     animation: backInRight;
     /* referring directly to the animation's @keyframe declaration */
     animation-duration: 7s;
     /* don't forget to set a duration! */
 }
 
-.text-footer,
-.blog-title,
-.container-title,
-.container-text {
+.animation {
     animation: backInLeft;
     /* referring directly to the animation's @keyframe declaration */
     animation-duration: 2s;
     /* don't forget to set a duration! */
 }
 
-.text-two-menu,
-.three-img,
-.blog-block {
+// .blog-title,
+// .container-title,
+// .container-text {
+//     animation: backInLeft;
+//     /* referring directly to the animation's @keyframe declaration */
+//     animation-duration: 2s;
+//     /* don't forget to set a duration! */
+// }
+
+.animation2 {
     animation: fadeIn;
     /* referring directly to the animation's @keyframe declaration */
     animation-duration: 3s;
